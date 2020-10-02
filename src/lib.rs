@@ -50,6 +50,9 @@ cfg_if::cfg_if! {
     } else if #[cfg(target_arch = "wasm32")] {
         #[path = "wasm.rs"]
         mod imp;
+    } else if #[cfg(target_os = "switch")] {
+        #[path = "switch.rs"]
+        mod imp;
     } else {
         #[path = "unix/mod.rs"]
         mod imp;

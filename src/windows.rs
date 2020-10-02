@@ -1,7 +1,6 @@
 use crate::FileTime;
 use std::fs::{self, File, OpenOptions};
 use std::io;
-use std::os::windows::prelude::*;
 use std::path::Path;
 use std::ptr;
 use winapi::shared::minwindef::*;
